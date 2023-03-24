@@ -1,0 +1,10 @@
+{
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "singleQuote": false,
+  "jsxSingleQuote": false,
+  "semi": true,
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^@/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
