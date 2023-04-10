@@ -1,4 +1,4 @@
-import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
+import Draggable from "react-draggable";
 
 import styles from "@/styles/Home.module.css";
 
