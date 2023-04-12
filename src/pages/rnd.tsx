@@ -9,7 +9,7 @@ export default () => {
         maxHeight={50}
         style={{ backgroundColor: "gray" }}
         resizeHandleStyles={{
-          bottomRight: { backgroundColor: "blue" }
+          bottomRight: { backgroundColor: "blue" },
         }}
       />
     </div>

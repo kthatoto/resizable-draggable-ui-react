@@ -1,5 +1,5 @@
-import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 import { useCallback, useRef, useState } from "react";
+import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 
 const MIN_WIDTH = 50;
 const MIN_HEIGHT = 50;
@@ -18,12 +18,15 @@ export default () => {
     setSize(resizingSize);
   }, [resizingSize]);
 
-  const onResize = useCallback((_e: DraggableEvent, data: DraggableData) => {
-    setResizingSize({
-      width: Math.max(MIN_WIDTH, size.width + data.x),
-      height: Math.max(MIN_HEIGHT, size.height + data.y),
-    });
-  }, [size]);
+  const onResize = useCallback(
+    (_e: DraggableEvent, data: DraggableData) => {
+      setResizingSize({
+        width: Math.max(MIN_WIDTH, size.width + data.x),
+        height: Math.max(MIN_HEIGHT, size.height + data.y),
+      });
+    },
+    [size]
+  );
 
   return (
     <div style={{ width: "100%", height: "100vh" }}>
